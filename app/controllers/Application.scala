@@ -49,4 +49,10 @@ object Application extends Controller {
     }
   }
 
+  def anotherJson = Action {
+    implicit request =>
+      val data = List("Abel", "Beriyo", "Rahel", "Samuel", "Kassech")
+      Ok(Json.toJson(data))
+  }
+
 }

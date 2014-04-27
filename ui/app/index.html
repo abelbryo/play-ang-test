@@ -67,7 +67,11 @@
 
         $.ajax("http://localhost:9000/somejson").done(function(e){
             console.log(e);
-        })
+        });
+
+        $.ajax("http://localhost:9000/anotherJson").done(function(e){
+            console.log(e);
+        });
     
     </script>
 
