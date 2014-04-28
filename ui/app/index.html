@@ -62,8 +62,9 @@
         <!-- endbuild -->
 
     <script>
-        if($ !== undefined && $ !== null)
-            alert(" Jquery has loaded. ")
+        if($ !== undefined && $ !== null){
+            console.log("Jquery has loaded")
+        }
 
         $.ajax("http://localhost:9000/somejson").done(function(e){
             console.log(e);
@@ -72,7 +73,7 @@
         $.ajax("http://localhost:9000/anotherJson").done(function(e){
             console.log(e);
         });
-    
+
     </script>
 
 </body>
