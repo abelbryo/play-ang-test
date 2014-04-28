@@ -9,8 +9,9 @@
        ga('send', 'pageview');</script><!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]--><script src="scripts/ded94bd9.vendor.js"></script><script src="scripts/d30dd16e.scripts.js"></script><script>if($ !== undefined && $ !== null)
-            alert(" Jquery has loaded. ")
+    <![endif]--><script src="scripts/ded94bd9.vendor.js"></script><script src="scripts/d30dd16e.scripts.js"></script><script>if($ !== undefined && $ !== null){
+            console.log("Jquery has loaded")
+        }
 
         $.ajax("http://localhost:9000/somejson").done(function(e){
             console.log(e);
